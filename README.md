@@ -17,4 +17,14 @@ Calling conventions
 &lt;/div&gt; </pre>
 and then in beforeRequest function, in your grid definition add this:
 
-<pre>beforeRequest: function(){</pre>
+<pre>beforeRequest: function(){
+if(!facetsInitialized){
+jQuery('#facets').jqGrid('facets', '#grid_id', options);
+facetsInitialized = true;
+}
+}</pre>
+
+Where:
+
+   * grid_id is the id of the grid to wich the facets are applied
+   * options is an array of settings in name: value pairs format
