@@ -1,4 +1,4 @@
-[jqGrdi-plugins](http://jquery.com/) - New Wave Javascript
+[jqGrid-plugins]
 ==================================================
 
 What you need to build your own jQuery
