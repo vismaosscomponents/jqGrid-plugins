@@ -1,4 +1,4 @@
-[jQuery](http://jquery.com/) - New Wave Javascript
+Visma plugins for jqGrid
 ==================================================
 
 What you need to build your own jQuery
