@@ -1,5 +1,5 @@
-[jqGrid-plugins]
-==================================================
+==jqGrid-plugins
+
 
 What you need to build your own jQuery
 --------------------------------------
