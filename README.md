@@ -1,4 +1,4 @@
-Visma plugins for jqGrid
+plugins for jqGrid
 ==================================================
 
 What you need to build your own jQuery
