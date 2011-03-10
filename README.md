@@ -7,7 +7,9 @@ Facets
 Demo page at [http://hci.mcr.ro:8080/Grid/gridFacets.html](http://hci.mcr.ro:8080/Grid/gridFacets.html)
 Instalation
 ---------------
-You need to include facets.js, vismaGris.css and the images folder.
+You need to include facets.js, vismaGris.css.
+<pre><link href="css/grid/vismaGrid.css" rel="stylesheet" type="text/css"/>
+<script src="js/facets.js" type="text/javascript"></script></pre>
 
 Calling conventions
 ----------------------------
