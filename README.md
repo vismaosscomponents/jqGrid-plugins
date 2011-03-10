@@ -9,7 +9,7 @@ Instalation
 ---------------
 You need to include facets.js, vismaGris.css and the images folder.
 
----++ Calling conventions
+---Calling conventions
 
 The facets div is defined, first, in html, positioned above grid definition:
 <pre>&lt;div class="vismaGridComponent"&gt;</pre><pre>&lt;div id='facets'&gt;&lt;/div&gt;</pre><pre>&lt;table id='grid_id'&gt;&lt;/table&gt; </pre><pre>&lt;/div&gt; </pre>and then in beforeRequest function, in your grid definition add this:
