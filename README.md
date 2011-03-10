@@ -1,9 +1,8 @@
 jqGrid-plugins
 ==========
 
-
-What you need to build your own jQuery
---------------------------------------
+Facets
+=====
 
 In order to build jQuery, you need to have GNU make 3.8 or later, Node.js 0.2 or later, and git 1.7 or later.
 (Earlier versions might work OK, but are not tested.)
