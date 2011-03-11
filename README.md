@@ -33,7 +33,16 @@ Where:
 
 #### Options
 <table>
-    <tr>
-        <td>Foo</td>
-    </tr>
+<tr>
+<th>Heading Col 1</th>
+<th>Heading Col 2</th>
+</tr>
+<tr>
+<td>Cell 1.1</td>
+<td>Two lines<br />in Cell 1.2</td>
+</tr>
+<tr>
+<td>Cell 2.1</td>
+<td>Cell 2.2</td>
+</tr>
 </table>
