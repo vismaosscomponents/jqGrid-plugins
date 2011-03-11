@@ -98,3 +98,5 @@ When the data is posted to the server we construct an array [] of 1 or more obje
 * the index:val pair where the val is the index of column where the facet was defined
 * the value:val pair where the val is the index of the selected facet
 This array is added to the postData parameters with the name facets.
+
+* [.mar
