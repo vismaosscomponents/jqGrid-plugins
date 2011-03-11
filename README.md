@@ -1,18 +1,18 @@
-###jqGrid-plugins
+#jqGrid-plugins
 
 
-Facets
-=====
+##Facets
+
 
 Demo page at [http://hci.mcr.ro:8080/Grid/gridFacets.html](http://hci.mcr.ro:8080/Grid/gridFacets.html)
-Instalation
----------------
+####Instalation
+
 You need to include facets.js, vismaGrid.css.
 <pre>&lt;link href="css/grid/vismaGrid.css" rel="stylesheet" type="text/css"/&gt;
 &lt;script src="js/facets.js" type="text/javascript"/&gt;</pre>
 
-Calling conventions
-----------------------------
+####Calling conventions
+
 <pre>&lt;div class="vismaGridComponent"&gt;
 &lt;div id='facets'&gt;&lt;/div&gt;
 &lt;table id='grid_id'&gt;&lt;/table&gt; 
