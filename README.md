@@ -46,3 +46,35 @@ Where:
 <td>false</td>
 </tr>
 </table>
+
+In ColModel API we added another property: facet; an array which describes the parameters of the facets.
+
+#### Facets API
+<table>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Set the name for each facet. (what will apper on the screen).</td>
+<td>none</td>
+</tr>
+<tr>
+<td>index</td>
+<td>string</td>
+<td>Set the index for each facet. (what is passed to server).</td>
+<td>none</td>
+</tr>
+<tr>
+<td>selected</td>
+<td>boolean</td>
+<td>Defines if the option is selected or not..</td>
+<td>false</td>
+</tr>
+</table>
+
+#####Example of facet definition in 
