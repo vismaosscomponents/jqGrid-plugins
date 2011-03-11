@@ -92,7 +92,7 @@ In ColModel API we added another property: facet; an array which describes the p
    {name:'Romania', index:'Ro'},
    {name:'Sweden', index:'Sw'}]
 },
-
+</pre></code>
 ####What is posted to the server
 When the data is posted to the server we construct an array [] of 1 or more objects {} that contains:
 the index:val pair where the val is the index of column where the facet was defined
