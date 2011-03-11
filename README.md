@@ -4,7 +4,7 @@
 ##Facets
 
 
-Demo page at [http://hci.mcr.ro:8080/Grid/gridFacets.html](http://hci.mcr.ro:8080/Grid/gridFacets.html)
+Demo page at [http://hci.mcr.ro/Grid/gridFacets.html](http://hci.mcr.ro/Grid/gridFacets.html)
 ####Instalation
 
 You need to include facets.js and vismaGrid.css
@@ -81,7 +81,7 @@ In ColModel API we added another property: facet; an array which describes the p
  <pre>
 { name: "Country",
   index: "country",
-  width: 100,     
+  width: 100,
   formatter: showCountryName,
   editable: true,
   edittype: "select", 
