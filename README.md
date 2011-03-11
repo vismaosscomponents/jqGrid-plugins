@@ -78,7 +78,7 @@ In ColModel API we added another property: facet; an array which describes the p
 </table>
 
 #####Example of facet definition in ColModel
- <pre>
+ <pre><code>
 { name: "Country",
   index: "country",
   width: 100,
@@ -98,4 +98,5 @@ In ColModel API we added another property: facet; an array which describes the p
            {name:'Sweden',
             index:'Sw'}]
 },
+</code>
  </pre> 
