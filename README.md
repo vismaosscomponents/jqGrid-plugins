@@ -32,7 +32,7 @@ Where:
    * options is an array of settings in name: value pairs format
 
 #### Options
-<table border='1' style='border-color:#E2E2E2; border-spacing:0px 0px;' cellspacing='0' cellpadding='0'>
+<table>
 <tr>
 <th>Option</th>
 <th>Type</th>
