@@ -32,5 +32,8 @@ Where:
    * options is an array of settings in name: value pairs format
 
 #### Options
-| *Option* | *Type* | *Description* | *Deafult* |
-| stringifyData | boolean | If set to true the data (facets data) that will be added to the postData parameter will be in JSON string format. | false |
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
