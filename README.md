@@ -86,7 +86,7 @@ In ColModel API we added another property: facet; an array which describes the p
   editable: true,
   edittype: "select", 
   editoptions: {value: "Fi:Finland;No:Norway;Ro:Romania;Sw:Sweden"},
-  facet:[{name:'All',index:'ALL'&#44
+  facet:[{name:'All',index:'ALL'&#44;
             selected:true }, 
            {name:'Finland',
             index:'Fi'},
