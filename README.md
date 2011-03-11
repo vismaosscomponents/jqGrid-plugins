@@ -90,7 +90,7 @@ In ColModel API we added another property: facet; an array which describes the p
            {name:'Finland', index:'Fi'},
            {name:'Norway', index:'No'},
            {name:'Romania', index:'Ro'},
-           {name:'Sweden', index:'Sw'}]]
+           {name:'Sweden', index:'Sw'}]
 },
 </code>
  </pre> 
