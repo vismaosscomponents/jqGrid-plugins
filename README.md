@@ -34,15 +34,15 @@ Where:
 #### Options
 <table>
 <tr>
-<th>Heading Col 1</th>
-<th>Heading Col 2</th>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
 </tr>
 <tr>
-<td>Cell 1.1</td>
-<td>Two lines<br />in Cell 1.2</td>
-</tr>
-<tr>
-<td>Cell 2.1</td>
-<td>Cell 2.2</td>
+<td>stringifyData</td>
+<td>boolean</td>
+<td>If set to true the data (facets data) that will be added to the postData parameter will be in JSON string format.</td>
+<td>false</td>
 </tr>
 </table>
