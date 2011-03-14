@@ -1,18 +1,17 @@
-#jqGrid-plugins
+# jqGrid-plugins
 
+## Facets
+This is a plugin that adds [faceted search](http://en.wikipedia.org/wiki/Faceted_search) to jqGrid. In practice, it's a way to filter data in one or more columns. Examples could be showing all items with a particular status.
 
-##Facets
+You can have more than one facet for a grid, and they can be based both on grid data (such as status active/inactive) and on queries (such as dates, this week/last week/last month/etc).
 
-
-Demo page at [http://hci.mcr.ro/Grid/gridFacets.html](http://hci.mcr.ro/Grid/gridFacets.html)
-####Instalation
-
+Demo page: [http://hci.mcr.ro/Grid/gridFacets.html](http://hci.mcr.ro/Grid/gridFacets.html)
+## Installation
 You need to include facets.js and vismaGrid.css
 <pre>&lt;link href="css/grid/vismaGrid.css" rel="stylesheet" type="text/css"/&gt;
 &lt;script src="js/facets.js" type="text/javascript"/&gt;</pre>
 
-####Calling conventions
-
+## Calling conventions
 <pre>&lt;div class="vismaGridComponent"&gt;
 &lt;div id='facets'&gt;&lt;/div&gt;
 &lt;table id='grid_id'&gt;&lt;/table&gt; 
@@ -31,7 +30,7 @@ Where:
    * grid_id is the id of the grid to wich the facets are applied
    * options is an array of settings in name: value pairs format
 
-#### Options
+## Options
 <table>
 <tr>
 <th>Option</th>
@@ -49,7 +48,7 @@ Where:
 
 In ColModel API we added another property: facet; an array which describes the parameters of the facets.
 
-#### Facets API
+## Facets API
 <table>
 <tr>
 <th>Option</th>
@@ -77,7 +76,7 @@ In ColModel API we added another property: facet; an array which describes the p
 </tr>
 </table>
 
-#####Example of facet definition in ColModel
+### Example of facet definition in ColModel
 <pre><code>
 { name: "Country",
   index: "country",
@@ -93,7 +92,7 @@ In ColModel API we added another property: facet; an array which describes the p
     {name:'Sweden', index:'Sw'}]
 },
 </code></pre>
-####What is posted to the server
+### Data posted to the server
 When the data is posted to the server we construct an array [] of 1 or more objects {} that contains:
 
 * the index:val pair where the val is the index of column where the facet was defined
