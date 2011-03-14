@@ -1,5 +1,5 @@
 ##Summary
-####This is a set of plugins (based on jQuery) developed for jqGrid:
+####This is a set of plugins (based on jQuery) developed for [jqGrid](http://www.trirand.com/blog/):
 * Facets
 * Inline editing (soon)
 
