@@ -1,11 +1,7 @@
-#Summary
+
+#### Summary
 This is a set of plugins (based on jQuery) developed for jqGrid:
-* Updated Modernizr to 1.6 (smaller and faster)
-* Added web.config file for Microsoft IIS. Now forcing latest IE version and ChromeFrame, if installed.
-* facets
-* inline editing (not ready yet)
-#### General
-* Updated Modernizr to 1.6 (smaller and faster)
-* Added web.config file for Microsoft IIS. Now forcing latest IE version and ChromeFrame, if installed.
-* Ad
+* Facets
+* Inline editing (soon)
+
 For more details about each plugin have a look in the doc folder.
