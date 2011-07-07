@@ -5,7 +5,7 @@ This is a plugin that adds [faceted search](http://en.wikipedia.org/wiki/Faceted
 
 You can have more than one facet for a grid, and they can be based both on grid data (such as status active/inactive) and on queries (such as dates, this week/last week/last month/etc).
 
-Demo page: [http://hci.mcr.ro/Grid/gridFacets.html](http://hci.mcr.ro/Grid/gridFacets.html)
+Demo page: [http://osi.visma.com/cc/Grid/gridFacets.html](http://osi.visma.com/cc/Grid/gridFacets.html)
 ## Installation
 You need to include facets.js and vismaGrid.css
 <pre>&lt;link href="css/grid/vismaGrid.css" rel="stylesheet" type="text/css"/&gt;
