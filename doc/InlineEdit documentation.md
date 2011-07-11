@@ -13,8 +13,8 @@ You need to include inlineEdit.js, inlineError.js, vismaGrid.css and respect the
 
 ##Methods
 
-   *inlineEdit
-   *endInlineEdit
+   * inlineEdit
+   * endInlineEdit
 
 ###inlineEdit
 Calling conventions
