@@ -69,14 +69,16 @@ Additionally to this we have other two options which can be set in grid options.
 
 ###endInlineEdit
 Calling conventions
+
 <pre>jQuery('#grid_id').jqGrid('endInlineEdit', rowid, success, newrowid);</pre>
 
 Where:
-	
-	* grid_id: is the already constructed grid
-	* rowid: is the id of the row that was edited/added
-	* success: (boolean) true if save was successful, false if not
-	* newrowid: needed when a new row is added (if the row was just edited this can be null). When a new row is added (addButton is clicked) the id of the new row is -1. If the save was successful we need to modify the id of the row with the newrowid.
+
+   * grid_id: is the already constructed grid
+   * rowid: is the id of the row that was edited/added
+   * success: (boolean) true if save was successful, false if not
+   * newrowid: needed when a new row is added (if the row was just edited this can be null). When a new row is added (addButton is clicked) the id of the new row is -1. If the save was successful we need to modify the id of the row with the newrowid.
+
 Usually this method is called in the aftersavefunc (from inlineEdit).
 
 ##Validator property in ColModel API
@@ -118,17 +120,20 @@ In ColModel API we added another property: validator, object wich contains a val
 
 ##Notes
 ###How is the data organized
+
 When the row is edited and the input elements are created we set the following rules:
-	* the table row becomes attribute editable=“1”
-	* the array savedRow (option in the grid) is filled with the values before the editing. This is a name:value pair array with additional pair id:rowed
-	* if we are adding a new row to the grid the id of the new row will be -1.
-	* hidden fields are not included
-	* the id of the editable element is constructed as 'rowid_'+ the name from the colModel array. Example if we edit row with id=10 and the only editable element is 'myname' (from colModel) then the id becomes 10_myname.
-	* the name of the editable element is constructed from the name of the colModel array - property – name
-	* after the row is saved or restored the editable attribute is set to “0” and the savedRow item with id=rowid is deleted
+
+   * the table row becomes attribute editable="1"
+   * the array savedRow (option in the grid) is filled with the values before the editing. This is a name:value pair array with additional pair id:rowed
+   * if we are adding a new row to the grid the id of the new row will be -1.
+   * hidden fields are not included
+   * the id of the editable element is constructed as 'rowid_'+ the name from the colModel array. Example if we edit row with id=10 and the only editable element is 'myname' (from colModel) then the id becomes 10_myname.
+   * the name of the editable element is constructed from the name of the colModel array - property - name
+   * after the row is saved or restored the editable attribute is set to "0" and the savedRow item with id=rowid is deleted
 
 ###What is posted to the server?
-	* when the data is posted to the server we construct an object {} that contain(s):
-	* the name:value pair where the name is the name of the input element represented in the row (this is for all input elements)
-	* additionally we add a pair id:rowid where the rowid is the id of the row. If we are adding a new row to the grid then rowid will be -1
-	* if the extraparam parameter is not empty we extend this data with the posted data
+
+   *  when the data is posted to the server we construct an object {} that contain(s):
+   * the name:value pair where the name is the name of the input element represented in the row (this is for all input elements)
+   * additionally we add a pair id:rowid where the rowid is the id of the row. If we are adding a new row to the grid then rowid will be -1
+   * if the extraparam parameter is not empty we extend this data with the posted data
