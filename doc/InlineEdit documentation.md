@@ -136,4 +136,8 @@ When the row is edited and the input elements are created we set the following r
    *  when the data is posted to the server we construct an object {} that contain(s):
    * the name:value pair where the name is the name of the input element represented in the row (this is for all input elements)
    * additionally we add a pair id:rowid where the rowid is the id of the row. If we are adding a new row to the grid then rowid will be -1
+<<<<<<< HEAD
    * if the extraparam parameter is not empty we extend this data with the posted data
+=======
+   * if the extraparam parameter is not empty we extend this data with the posted data
+>>>>>>> b6fd985613ccdf7e46f8160546a623ff399a37c5
