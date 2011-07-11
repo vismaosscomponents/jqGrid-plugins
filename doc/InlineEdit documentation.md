@@ -72,6 +72,11 @@ Calling conventions
 
 <pre>jQuery('#grid_id').jqGrid('endInlineEdit', rowid, success, newrowid);</pre>
 
+Where:
+
+   * grid_id: is the already constructed grid
+   * addButton: is the add button for the grid
+
 
 Usually this method is called in the aftersavefunc (from inlineEdit).
 
