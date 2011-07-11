@@ -75,8 +75,9 @@ Calling conventions
 Where:
 
    * grid_id: is the already constructed grid
-   * addButton: is the add button for the grid
-
+   * rowid: is the id of the row that was edited/added
+   * success: (boolean) true if save was successful, false if not
+   * newrowid: needed when a new row is added (if the row was just edited this can be null). When a new row is added (addButton is clicked) the id of the new row is -1. If the save was successful we need to modify the id of the row with the newrowid.
 
 Usually this method is called in the aftersavefunc (from inlineEdit).
 
