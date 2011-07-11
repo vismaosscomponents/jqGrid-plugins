@@ -41,10 +41,11 @@ Where:
    * afterrestorefunc if defined, this function is called (in case the row is not saved with success) after restoring the row. To this function we pass the rowed
 
 The parameters functions should not be enclosed in quotes and not entered with () - show just the name of the function.
+
 Except when editurl is 'clientArray', when this method is called, the data from the particular row is POSTED to the server in format name: value, where the name is a name from colModel and the value is the new value. jqGrid also adds, to the posted data, the pair id: rowid.
+
 Additionally to this we have other two options which can be set in grid options.
    
-## Options
 <table>
 <tr>
 <th>Option</th>
@@ -68,7 +69,9 @@ Additionally to this we have other two options which can be set in grid options.
 
 ###endInlineEdit
 Calling conventions
-<pre>jQuery('#grid_id').jqGrid('endInlineEdit', rowid, success, newrowid);</pre>
+<pre>
+jQuery('#grid_id').jqGrid('endInlineEdit', rowid, success, newrowid);
+</pre>
 
 Where:
 	
@@ -81,7 +84,6 @@ Usually this method is called in the aftersavefunc (from inlineEdit).
 ##Validator property in ColModel API
 In ColModel API we added another property: validator, object wich contains a validator function and error message for the edited cell.
 
-## Options
 <table>
 <tr>
 <th>Option</th>
