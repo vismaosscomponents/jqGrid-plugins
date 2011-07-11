@@ -69,9 +69,7 @@ Additionally to this we have other two options which can be set in grid options.
 
 ###endInlineEdit
 Calling conventions
-<pre>
-jQuery('#grid_id').jqGrid('endInlineEdit', rowid, success, newrowid);
-</pre>
+<pre>jQuery('#grid_id').jqGrid('endInlineEdit', rowid, success, newrowid);</pre>
 
 Where:
 	
