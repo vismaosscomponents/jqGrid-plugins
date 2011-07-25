@@ -2,6 +2,7 @@
 
 ## FixGridWidth
 Plugin that enables the jqGrid to resize when the browser window is resized.
+
 Demo page: [http://osi.visma.com/cc/Grid/gridFacets.html](http://osi.visma.com/cc/Grid/gridFacets.html) resize the browser window.
 
 ## Installation
