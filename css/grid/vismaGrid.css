@@ -1,5 +1,5 @@
 /**
- * Custom styles for jqGrid and our plugins
+ * Custom styles for jqGrid and our extensions
  * Laurentiu Ciucur laurentiu.ciucur@visma.com
  * http://www.visma.com/
  * Dual licensed under the MIT and GPL licenses:
@@ -19,13 +19,19 @@ div.vismaGridComponent div.ui-jqgrid div.loading {
     height: 32px;
     margin: auto auto;
     width: 32px;
+    border-width: 0px !important;
 }
 div.vismaGridComponent .ui-jqgrid .ui-jqgrid-view {
-    border: 1px solid #E8E8E8;
-    border-top: 1px solid #C0BFC0;
+    border: 1px solid #c0c0c0;
+    /*border-top: 1px solid #C0BFC0;*/
+}
+div.vismaGridComponent .ui-jqgrid .ui-jqgrid-bdiv {
+    background-color: white;
+    background: white url(../../images/grid/grid_bg.png) repeat scroll;	/* faked empty rows, as separate line to make it easy to comment out when/if we solve this properly or if it looks ridiculous...*/
 }
 div.vismaGridComponent .ui-jqgrid .ui-jqgrid-hdiv {
     background: #E6E6E6 url(../../images/grid/grid_header_bg.png) repeat-x scroll;
+    border-bottom: 1px solid #C0C0C0;
 }
 div.vismaGridComponent .ui-jqgrid .ui-jqgrid-htable th {
     background: #E6E6E6 url(../../images/grid/grid_header_bg.png) repeat-x scroll;
@@ -35,7 +41,8 @@ div.vismaGridComponent .ui-jqgrid .ui-jqgrid-htable th {
     padding: 0 2px 0 2px;
 }
 div.vismaGridComponent .ui-jqgrid .ui-jqgrid-htable th div {
-    color:#323232;
+    color: #101010;
+    font-weight: normal;
     height:16px;
     padding-right:12px;
     text-align:right;
@@ -46,7 +53,7 @@ div.vismaGridComponent .ui-jqgrid .ui-jqgrid-htable th div#jqgh_cb {
 }
 /*div.vismaGridComponent .ui-jqgrid .ui-jqgrid-htable th[area-selected="true"] div {padding-right:12px;}*/
 div.vismaGridComponent .ui-jqgrid .ui-jqgrid-htable th {
-    border-right:1px solid #E3E3E3;
+    border-right: 1px solid #BEBEBE;
 }
 div.vismaGridComponent .ui-jqgrid .ui-icon-asc {
     background: url(../../images/grid/sort_ascending.png) no-repeat;
@@ -69,16 +76,16 @@ div.vismaGridComponent .ui-state-disabled{
 }
 div.vismaGridComponent .ui-jqgrid tr.jqgrow td {
     border-bottom: none;
-    border-right: 1px solid #E3E3E3;
+    border-right: 1px dotted #BEBEBE;
     height:16px;
     vertical-align:top;
     -webkit-user-select: none;
     -khtml-user-select: none;
-    -moz-user-select: none;
+    -moz-user-select: -moz-none;
     -o-user-select: none;
     user-select: none;
-    cursor: default
-
+    cursor: default;
+    padding: 0 4 px;
 }
 div.vismaGridComponent .ui-jqgrid .jqrow {
     background: #FFFFFF;
@@ -86,9 +93,10 @@ div.vismaGridComponent .ui-jqgrid .jqrow {
 div.vismaGridComponent .ui-jqgrid tr.ui-widget-content{
     background: #FFF;
     opacity:1;
+    border: none;
 }
 div.vismaGridComponent .ui-jqgrid tr.ui-priority-secondary{
-    background: #F7F7F7;
+    background: #F0F0F0;
     opacity:1;
 }
 /*div.vismaGridComponent .ui-jqgrid tr.ui-state-hover {
@@ -100,17 +108,28 @@ div.vismaGridComponent .ui-jqgrid tr.ui-state-highlight {
 }
 div.vismaGridComponent .ui-jqgrid tr.ui-state-selected {
     background: #a7c5e6 url(../../images/grid/selected_row_bg.png) repeat-x scroll;
+    border-style: none;
 }
 div.vismaGridComponent .ui-jqgrid .ui-jqgrid-pager {
-    background: none;
-    border: 0px none !important;
-    height: 20px;
+    background: url(../../images/grid/grid_paging_bg.png) repeat-x;
+    /*    border: 0px none !important;*/
+    border-left: 1px solid #c0c0c0 !important;
+    border-right: 1px solid #c0c0c0 !important;
+    border-top: 0 none;
+    height: 19px;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 div.vismaGridComponent .ui-jqgrid .ui-pg-table td {
     overflow:hidden;
 }
 div.vismaGridComponent .ui-jqgrid .ui-paging-info {
     margin-right:16px;
+    margin-top: 0;
 }
 div.vismaGridComponent a.gridEditBtn {
     visibility:hidden;
@@ -122,7 +141,7 @@ div.vismaGridComponent .ui-jqgrid tr[editable="1"] {
     background: #FFFFFF;
 }
 div.vismaGridComponent .ui-jqgrid tr.ui-priority-secondary[editable="1"] {
-    background: #F7F7F7;
+    background: #F0F0F0;
 }
 div.vismaGridComponent .ui-jqgrid input[type="text"], div.vismaGridComponent .ui-jqgrid select{
     height:16px;
@@ -130,6 +149,7 @@ div.vismaGridComponent .ui-jqgrid input[type="text"], div.vismaGridComponent .ui
     padding: 0;
     vertical-align:top;
     outline: none;
+    -moz-user-select: text;
 }
 div.vismaGridComponent .ui-jqgrid select{
     height:18px;
@@ -185,7 +205,8 @@ div#search a.btn{
     margin:0 .5em 0 0;
 }
 div#search input[type="text"]{
-    background: url(../../images/grid/search_button.gif) no-repeat right top;
+    background: white url(../../images/grid/search_button.gif) no-repeat right top;
+    margin: 4px auto;
     padding-right: 16px;
 }
 div#search table{
@@ -249,7 +270,7 @@ div.vismaGridComponent div.ui-jqgrid-hdiv {
     overflow-y: visible;
 }
 
-/*facests css*/
+/*facets css*/
 
 ul.jqfacets{margin:0 0 5px 0; padding:0;}
 ul.jqfacets li.jqfacets-name{
@@ -261,7 +282,9 @@ ul.jqfacets li{
     margin-left: 0px;
     cursor: pointer
 }
-ul.jqfacets li.jqfacets-name{width: 75px;}
+ul.jqfacets li.jqfacets-name{
+    width: 75px;
+}
 .jqfacets-selected-item a.facet{
     background:url("../../images/grid/facet_right.png") no-repeat scroll right top transparent;
 }
@@ -281,7 +304,6 @@ span.facet{
     width:auto;
 }
 a.facet{
-    color:#323232;
     display:block;
     float:left;
     height:17px;
@@ -294,6 +316,7 @@ a.facet{
     width:auto;
 }
 a.facet span{
+    color: #323232;
     display:block;
     font-weight:bold;
     height:17px;
@@ -301,10 +324,10 @@ a.facet span{
 }
 a.facet:hover{
     background:url("../../images/grid/facet_right.png") no-repeat scroll right bottom transparent;
+    text-decoration: none;
 }
 a.facet:active{
     background-position: right top;
-    text-decoration: none
 }
 a.facet:hover span{
     background:url("../../images/grid/facet_left.png") no-repeat scroll left bottom transparent;
@@ -315,7 +338,7 @@ a.facet:active span{
 
 /*inlineError css*/
 
-div.vismaGridComponent input.inlineEditError{
+div.vismaGridComponent input.inlineEditError, div.vismaGridComponent textarea.inlineEditError, div.vismaGridComponent select.inlineEditError{
     border:2px solid #D20000;
 }
 .inlineEditErrorBox{
@@ -326,4 +349,57 @@ div.vismaGridComponent input.inlineEditError{
     padding-right: 2px;
     position: absolute;
     z-index: 1000;
+}
+div.vismaGridComponent{
+    display: block;
+    width: auto;
+}
+
+/* Master detail */
+
+div.vismaGridComponent form.masterDetail {
+    background: #f9f9f9 url(../../images/grid/grid_masterDetails_bg.png) repeat-x;
+    border: 1px solid #ccc;
+    border-top: 0 none;
+    width: 100%;
+}
+div.vismaGridComponent form.masterDetail div.masterDetailData {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 12px;
+}
+
+div.vismaGridComponent form.masterDetail div.masterDetailData label {
+    display: inline-block;
+    min-width: 6em;
+}
+div.vismaGridComponent form.masterDetail div.masterDetailData fieldset {
+    margin-bottom: 0;
+}
+div.vismaGridComponent form.masterDetail div.masterDetailData fieldset textarea {
+    margin: 0 0 4px 0;
+    height: 40px;
+}
+div.vismaGridComponent form.masterDetail div.masterDetailData label em {
+    left: -9px;
+}
+div.vismaGridComponent form.masterDetail fieldset.buttons {
+    background: #e8e8e8 url(../../images/grid/grid_buttons_bg.png) repeat-x;
+    clear: both;
+    min-height: 30px;
+    margin-bottom: 0;
+    padding: 0 12px;
+}
+div.vismaGridComponent form.masterDetail fieldset.buttons input {
+    margin: 4px 5px 4px 0;
+}
+
+div.vismaGridComponent form.masterDetail div.masterDetailNoData {
+    background: #f9f9f9 url(../../images/grid/grid_masterDetails_bg.png) repeat-x;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 12px;
+    text-align: center;
+}
+div.vismaGridComponent form.masterDetail div.masterDetailNoData span{
+    vertical-align: middle;
+    line-height: 46px;
 }
