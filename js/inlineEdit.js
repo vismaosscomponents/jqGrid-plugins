@@ -109,7 +109,7 @@
                 var gID = $t.p.id;
                 //if in add mode we need to trigger blur on each field so it can be validate
                 if(rowId == -1){
-                    $("#"+gID + " tr[id ="+rowId+"] input[id^= "+rowId+"].is(':visible'), #" +gID + " tr[id ="+rowId+"] select[id^= "+rowId+"].is(':visible'), #" +gID + " tr[id ="+rowId+"] textarea[id^= "+rowId+"].is(':visible')").trigger('blur');
+                    $("#"+gID + " tr[id ="+rowId+"] input[id^= "+rowId+"], #" +gID + " tr[id ="+rowId+"] select[id^= "+rowId+"], #" +gID + " tr[id ="+rowId+"] textarea[id^= "+rowId+"]").filter(':visible').trigger('blur');
                 }
                 if($("#"+gID + " tr[id ="+rowId+"] input[id^= "+rowId+"], #" +gID + " tr[id ="+rowId+"] select[id^= "+rowId+"], #" +gID + " tr[id ="+rowId+"] textarea[id^= "+rowId+"]").hasClass('inlineEditError')){
                     res= false;
